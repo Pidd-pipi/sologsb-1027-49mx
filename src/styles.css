@@ -152,6 +152,85 @@ button, input, textarea, select { font: inherit; }
 .freeze-rules > div small { color: #8692a1; font-size: 9px; }
 .freeze-rules .bp6-button { margin-top: 14px; }
 .app-footer { min-height: 42px; padding: 13px 22px; display: flex; justify-content: space-between; gap: 20px; color: #778496; background: #e9edf2; border-top: 1px solid #d8dee5; font-size: 9px; }
+
+/* 偏离许可 */
+.card-title-tags { display: flex; align-items: center; gap: 8px; }
+.step-permit-notice { display: grid; gap: 8px; margin-bottom: 14px; }
+.permit-callout { padding: 11px 13px; }
+.permit-callout strong { display: block; font-size: 11px; }
+.permit-callout p { margin: 4px 0 0; font-size: 10px; line-height: 1.6; }
+.permit-callout-actions { display: flex; gap: 8px; margin-top: 7px; }
+.permit-gate-callout { margin-bottom: 12px; }
+.permit-gate-callout p { margin: 4px 0 8px; font-size: 10px; line-height: 1.55; }
+.permits-layout { padding: 16px 22px 34px; display: grid; grid-template-columns: minmax(640px, 1fr); gap: 14px; }
+.permits-main { min-width: 0; display: grid; gap: 14px; }
+.permits-overview { padding: 19px; border: 1px solid var(--line); border-radius: 10px; }
+.permit-stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; margin: 14px 0; background: #dfe5ec; border: 1px solid #dfe5ec; border-radius: 8px; overflow: hidden; }
+.permit-stat-grid div { padding: 14px; background: #f8fafb; text-align: center; }
+.permit-stat-grid strong { display: block; font: 600 20px "IBM Plex Mono", monospace; color: var(--navy); }
+.permit-stat-grid span { font-size: 9px; color: #7b8797; }
+.permit-rule-callout { font-size: 10px; line-height: 1.7; }
+.permit-rule-callout.bp6-callout { padding: 10px 13px; }
+.permit-form-card { padding: 19px; border: 1px solid #c8d6ea; border-radius: 10px; box-shadow: 0 10px 26px rgba(35,66,102,.12); }
+.permit-field-picker { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2px 12px; padding: 10px 12px; border: 1px solid #e2e7ed; border-radius: 8px; background: #f9fafb; }
+.permit-field-picker .bp6-checkbox { margin: 0; }
+.permit-field-row { display: grid; grid-template-columns: minmax(180px, .8fr) 2fr; gap: 14px; align-items: start; padding: 10px 0; border-top: 1px dashed #e2e7ed; }
+.permit-field-original span { display: block; color: #8792a2; font-size: 9px; margin-bottom: 4px; }
+.permit-field-original p { margin: 0; padding: 7px 9px; border-radius: 6px; background: #f1f4f7; color: #526071; font-size: 10px; line-height: 1.6; white-space: pre-wrap; word-break: break-word; }
+.permit-form-actions { display: flex; justify-content: flex-end; gap: 9px; }
+.permit-list { display: grid; gap: 14px; }
+.permit-card { padding: 18px; border: 1px solid var(--line); border-left-width: 4px; border-radius: 10px; }
+.permit-card.status-active { border-left-color: var(--green); }
+.permit-card.status-approved { border-left-color: var(--blue); }
+.permit-card.status-pending { border-left-color: var(--amber); }
+.permit-card.status-rejected, .permit-card.status-expired, .permit-card.status-revoked, .permit-card.status-drifted { border-left-color: var(--red); }
+.permit-card-head { display: flex; justify-content: space-between; gap: 16px; margin-bottom: 12px; }
+.permit-code-line { display: flex; align-items: center; gap: 7px; color: var(--blue); font: 600 10px "IBM Plex Mono", monospace; letter-spacing: .08em; }
+.permit-card-head h3 { margin: 5px 0 0; font-size: 14px; }
+.permit-window { text-align: right; }
+.permit-window span { display: block; color: #8792a2; font-size: 9px; }
+.permit-window strong { display: block; margin-top: 3px; font-size: 10px; font-weight: 600; color: #465365; }
+.permit-field-table { border: 1px solid #dde3ea; border-radius: 8px; overflow: hidden; margin-bottom: 12px; }
+.permit-field-table-head, .permit-field-table-row { display: grid; grid-template-columns: 130px 1fr 1fr; gap: 10px; padding: 9px 12px; font-size: 10px; align-items: start; }
+.permit-field-table-head { background: #f1f4f7; color: #697687; font-weight: 600; }
+.permit-field-table-row { border-top: 1px solid #e6eaf0; }
+.permit-field-table-row > span { display: flex; align-items: center; gap: 5px; font-weight: 600; color: #465365; }
+.permit-field-table-row em { color: #7b8797; font-style: normal; line-height: 1.6; word-break: break-word; white-space: pre-wrap; }
+.permit-field-table-row strong { color: var(--navy); line-height: 1.6; word-break: break-word; white-space: pre-wrap; }
+.permit-field-table-row small { display: block; margin-top: 3px; }
+.permit-detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 10px; }
+.permit-detail-grid > div { padding: 10px 12px; border-radius: 8px; background: #f8fafb; }
+.permit-detail-grid span { display: block; color: #8792a2; font-size: 9px; margin-bottom: 4px; }
+.permit-detail-grid p { margin: 0; font-size: 10px; line-height: 1.65; color: #44515f; white-space: pre-wrap; word-break: break-word; }
+.permit-meta-line { display: flex; flex-wrap: wrap; gap: 6px 16px; color: #7b8797; font-size: 9px; margin-bottom: 10px; }
+.permit-downstream { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; padding: 9px 11px; margin-bottom: 10px; border-radius: 8px; background: #fff9ee; font-size: 9px; color: #8a6a2c; }
+.permit-downstream > span { width: 100%; }
+.permit-downstream button { display: inline-flex; align-items: center; gap: 5px; padding: 3px 9px; border: 1px solid #e6d4a8; border-radius: 20px; background: #fff; color: #5f4d22; font-size: 9px; cursor: pointer; }
+.permit-downstream button:hover { background: #fff6e2; }
+.permit-review-note { display: flex; gap: 9px; padding: 10px 12px; margin-bottom: 10px; border-radius: 8px; background: #eef9f3; }
+.permit-review-note.rejected { background: #fff1f1; }
+.permit-review-note strong { font-size: 10px; }
+.permit-review-note p { margin: 3px 0 0; font-size: 10px; line-height: 1.6; color: #44515f; }
+.permit-review-box { padding: 11px; border: 1px solid #d8e2f0; border-radius: 8px; background: #f6f9fd; margin-bottom: 10px; }
+.permit-action-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 0; }
+.permit-action-row > div { display: flex; gap: 8px; }
+.permit-timeline { margin-top: 8px; padding-top: 10px; border-top: 1px dashed #e2e7ed; display: grid; gap: 0; }
+.permit-event { display: grid; grid-template-columns: 16px 1fr; gap: 8px; position: relative; padding-bottom: 12px; }
+.permit-event:last-child { padding-bottom: 0; }
+.permit-event::before { content: ''; position: absolute; left: 5px; top: 12px; bottom: 0; width: 1px; background: #d4dce6; }
+.permit-event:last-child::before { display: none; }
+.permit-event-dot { width: 11px; height: 11px; margin-top: 3px; border: 3px solid #9fb0c2; border-radius: 50%; background: #fff; z-index: 1; }
+.permit-event header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 7px; }
+.permit-event header strong { font-size: 10px; color: var(--navy); }
+.permit-event header em { font-style: normal; color: #8792a2; font-size: 9px; }
+.permit-event header time { margin-left: auto; color: #9aa5b2; font-size: 9px; }
+.permit-event p { margin: 3px 0 0; font-size: 9px; line-height: 1.6; color: #657181; }
+.empty-permits { padding: 44px 20px; text-align: center; color: #7b8796; }
+.empty-permits strong { display: block; margin-top: 8px; color: #465366; }
+.empty-permits p { margin: 5px 0 0; font-size: 10px; }
+.permit-snapshot-line { display: flex; align-items: center; gap: 4px; color: var(--blue) !important; }
+.step-list button .permit-mini { margin-left: auto; }
+
 @media (max-width: 1240px) {
   .process-banner { grid-template-columns: 1fr 1fr; }
   .banner-progress { grid-column: 1 / 3; }
@@ -177,4 +256,9 @@ button, input, textarea, select { font: inherit; }
   .diff-selects { flex-wrap: wrap; justify-content: flex-end; }
   .diff-row, .diff-head { grid-template-columns: 60px 1fr; }
   .diff-row p, .diff-head span:last-child { grid-column: 1 / 3; margin-top: 5px; }
+  .permit-stat-grid { grid-template-columns: repeat(2, 1fr); }
+  .permit-field-picker { grid-template-columns: repeat(2, 1fr); }
+  .permit-field-row, .permit-detail-grid, .permit-field-table-head, .permit-field-table-row { grid-template-columns: 1fr; }
+  .permit-card-head { flex-direction: column; }
+  .permit-window { text-align: left; }
 }
